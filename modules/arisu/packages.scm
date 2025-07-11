@@ -9,6 +9,7 @@
 (define arisu-desktop-packages
   (list (specification->package "emacs")
         (specification->package "emacs-exwm")
+        (specification->package "xfce")		
         (specification->package "emacs-desktop-environment")
         (specification->package "kitty")
         (specification->package "flameshot")

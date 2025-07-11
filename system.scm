@@ -7,7 +7,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Personal desktop/server configuration
-;; EXWM-based setup with file sharing services
+;; EXWM and XFCE setup with file sharing services
 
 (add-to-load-path (string-append (dirname (current-filename)) "/modules"))
 
@@ -56,6 +56,9 @@
                      ;; System services
                      (service openssh-service-type)
 
+					 ;; XFCE
+                     (service xfce-desktop-service-type)
+					 
                      ;; X11 configuration for EXWM
                      (set-xorg-configuration
                       (xorg-configuration 
